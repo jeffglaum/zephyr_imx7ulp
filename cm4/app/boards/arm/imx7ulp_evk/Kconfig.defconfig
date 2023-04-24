@@ -1,0 +1,14 @@
+
+if BOARD_NXP_IMX7ULP_EVK
+
+config BOARD
+    default "imx7ulp_evk"
+
+if !XIP
+config FLASH_SIZE
+    default 0
+config FLASH_BASE_ADDRESS
+    default 0
+endif    # !XIP
+
+endif    # BOARD_NXP_IMX7ULP_EVK

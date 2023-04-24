@@ -1,0 +1,5 @@
+
+config BOARD_NXP_IMX7ULP_EVK
+    bool "NXP iMX.7ULP EVK"
+    depends on SOC_MCIMX7ULP_M4
+    select SOC_PART_NUMBER_MCIMX7U5DVP08SC

@@ -1,0 +1,13 @@
+identifier: imx7ulp_evk
+name: NXP iMX.7ULP EVK
+type: mcu
+arch: arm
+ram: 64
+flash: 16
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+  testing:
+  supported:
+    

@@ -1,0 +1,25 @@
+/dts-v1/;
+
+#include <nxp/imx7ulp_m4.dtsi>
+
+/ {
+    model = "NXP iMX.7ULP EVK board";
+    compatible = "nxp,mcimx7ulp_m4";
+
+    chosen {
+        zephyr,flash = &qspi_code;
+        zephyr,sram = &sram_l;
+        zephyr,console = &uart0;
+        zephyr,shell-uart = &uart0;
+    };
+};
+
+// TODO
+/*
+&uart0 {
+    status = "okay";
+    current-speed = <115200>;
+    modem-mode = <64>;
+};
+*/
+
